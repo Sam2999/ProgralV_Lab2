@@ -46,12 +46,44 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Estilo para los botones con la clase 'btn' */
+button.btn {
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+/* Gradiente para el botón de incrementar */
+button.btn.increment {
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+}
+
+button.btn.increment:hover {
+  background: linear-gradient(to right, #00acc1, #1976d2);
+}
+
+/* Gradiente para el botón de decrementar */
+button.btn.decrement {
+  background: linear-gradient(to right, #e91e63, #ff5722);
+}
+
+button.btn.decrement:hover {
+  background: linear-gradient(to right, #d81b60, #f4511e);
 }
 
 @media (prefers-color-scheme: light) {
